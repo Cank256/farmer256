@@ -1,0 +1,230 @@
+
+<html>
+<title>Crops | Farming 256</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/cank.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="cank-light-grey">
+
+<!-- content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="cank-content" style="max-width:1400px">
+
+<!-- Navbar (sit on top) -->
+<div class="cank-container cank-top">
+<!-- Navigation bar with social media icons -->
+<div class="cank-bar cank-light-grey cank-hide-small" ">
+  <a href="https://www.facebook.com" class="cank-bar-item cank-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/" class="cank-bar-item cank-button"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.flickr.com/" class="cank-bar-item cank-button"><i class="fa fa-flickr"></i></a>
+  <a href="https://www.twitter.com/" class="cank-bar-item cank-button"><i class="fa fa-twitter"></i></a>
+  <button class="cank-right cank-button cank-white" onclick="cank_open()"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens 
+<div class="cank-overlay cank-animate-opacity" onclick="cank_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
+
+<div id="myOverlay" class="cank-overlay cank-animate-opacity" style="cursor:pointer">
+  <span class="closebtn" onclick="cank_close()" title="Close Search">X</span>
+  <div class="cank-overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="What do you want to search?" name="search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+<!-- Primary menu -->
+  <div class="cank-bar cank-white cank-padding cank-card topnav">
+    <a href="index.html" class="cank-bar-item cank-button"><b>Farmer 256<b></a>
+	
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="cank-right cank-hide-small">
+      <a href="about.html" class="cank-bar-item cank-button">About</a>
+	  <a href="crops.html" class="cank-bar-item cank-button">Crops</a>
+	  <a href="animals.html" class="cank-bar-item cank-button">Animal Husbandry</a>
+	  <a href="news.html" class="cank-bar-item cank-button">News</a>
+	  <a href="market.html" class="cank-bar-item cank-button">Market</a>
+	  <a href="getin.html" class="cank-bar-item cank-button">Get Involved</a>
+	  <a href="contact.html" class="cank-bar-item cank-button">Contact Us</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="cank-display-container cank-center cank-content cank-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="cank-image" src="assets/images/veg.jpg" alt="Vegetables" width="1200" height="400">
+  <div class="cank-card-4 cank-margin cank-white cank-display-left cank-padding-large cank-opacity">
+  <h3><b>Crops</b></h3>
+  </div>
+</header>
+
+<!-- Grid -->
+<div class="cank-row">
+
+<!-- Blog entries -->
+<div class="cank-col l8 s12">
+  <!-- Blog entry -->
+   <div class="cank-card-4 cank-margin cank-white">
+    
+    <div class="cank-container">
+      <h3><b>All about Crops</b></h3>
+    </div>
+
+    <div class="cank-container">
+      <p>Get to know the different techniques and solutions to harvest better yields, 
+	  expert stories will be uploaded regularly to keep you updated with the trending market based
+	  information from managing, farms to value addition and profit making.</p>
+    </div>
+  </div>
+  <hr>
+  <!-- Blog entry -->
+  <div class="cank-card-4 cank-margin cank-white">
+  <img src="assets/images/coffee.jpg" alt="Cattle" style="width:100%">
+    <div class="cank-container">
+      <h3><b>Coffee Market Boom</b></h3>
+    </div>
+
+    <div class="cank-container">
+      <p>The coffee shop market is continuing to boom with consumers drinking more and operators expanding, 
+	  claims new research. Michelle Perrett reports.<br/>
+	  Despite there being concerns that the market is becoming saturated the coffee sector shows no 
+	  signs of slowing down, the latest research indicates. Figures from the British Coffee Association (BCA) 
+	  show that coffee consumption across the nation is continuing to grow.</p>
+      <div class="cank-row">
+        <div class="cank-col m8 s12">
+          <p><a href="coffee-market-boom.html"><button class="cank-button cank-padding-large cank-white cank-border"><b>MORE »</b></button></a></p>
+        </div>
+        <div class="cank-col m4 cank-hide-small">
+          <p><span class="cank-padding-large cank-right"><b>Comments  </b> <span class="cank-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+
+  <!-- Blog entry -->
+  <div class="cank-card-4 cank-margin cank-white">
+  <img src="assets/images/veg.jpg" alt="Vegetables" style="width:100%">
+    <div class="cank-container">
+      <h3><b>Farmer's Incentives</b></h3>
+    </div>
+
+    <div class="cank-container">
+      <p>The Agricultural Sector continues to be the most important sector in Uganda; 
+	  it employs approximately 69% of the population and contributed about 26% to the GDP in 2015/16. 
+	  The Government has increased the allocation to the agricultural sector in the 2016/17 budget to UGX 832.42 billion 
+	  which represents a 65% increase.</p>
+      <div class="cank-row">
+        <div class="cank-col m8 s12">
+          <p><a href="Farmer's-Incentives.html"><button class="cank-button cank-padding-large cank-white cank-border"><b>MORE »</b></button></a></p>
+        </div>
+        <div class="cank-col m4 cank-hide-small">
+          <p><span class="cank-padding-large cank-right"><b>Comments  </b> <span class="cank-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES --> 
+
+</div>
+
+<!-- Introduction menu -->
+<div class="cank-col l4">
+  
+ <!-- Posts -->
+  <div class="cank-card cank-margin">
+    <div class="cank-container cank-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="cank-ul cank-hoverable cank-white">
+      <li class="cank-padding-16">
+        <img src="assets/images/cattle.jpg" alt="Image" class="cank-left cank-margin-right" style="width:50px">
+        <span class="cank-large"><a href="cattle-Hit-by-Anthrax.html">Cattle Hit by Anthrax<a></span><br>
+        <span>Farmers Loose Thousands</span>
+      </li>
+      <li class="cank-padding-16">
+        <img src="assets/images/coffee.jpg" alt="Image" class="cank-left cank-margin-right" style="width:50px">
+        <span class="cank-large"><a href="coffee-market-boom.html">Coffee Market Boom</a></span><br>
+        <span>Check out these mouth-watering prices</span>
+      </li> 
+      <li class="cank-padding-16">
+        <img src="assets/images/farmer.jpg" alt="Image" class="cank-left cank-margin-right" style="width:50px">
+        <span class="cank-large"><a href="value-addition.html">Value Addition is the Way</a></span><br>
+        <span>See how adding Value to Vegetable will yield your profits.</span>
+      </li>   
+      <li class="cank-padding-16 cank-hide-medium cank-hide-small">
+        <img src="assets/images/veg.jpg" alt="Image" class="cank-left cank-margin-right" style="width:50px">
+        <span class="cank-large"><a href="Farmer's-Incentives.html">farmer's Incentives</a></span><br>
+        <span>Do not miss out on government engagements</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="cank-card cank-margin">
+    <div class="cank-container cank-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="cank-container cank-white">
+    <p><span class="cank-tag cank-black cank-margin-bottom">News</span>  
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">Tools</span>
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">Market</span> 
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">Cattle</span> 
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">Seminars</span>
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">MOA</span> 
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">Presdiential Initiative</span>
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">News</span> 
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">Exports</span>
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">Imports</span> 
+       <span class="cank-tag cank-light-grey cank-small cank-margin-bottom">Others</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END cank-content -->
+</div>
+
+<!-- Footer -->
+<footer class="cank-container cank-center cank-dark-grey cank-padding-20 cank-margin-top">
+  <p>Powered by <a href="https://www.canktech.com/" target="_blank">CankTech Inc.</a></p>
+</footer>
+
+<script>
+// Script to open and close sidebar
+function cank_open() {
+  
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function cank_close() {
+  
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// script for responsive menu bar
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
